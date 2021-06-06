@@ -10,7 +10,7 @@ public interface ProductDAO {
 	public int deleteProduct(int productId);
 	public ProductEntity updateProduct(ProductEntity product);
 	public List<ProductEntity> getAllProducts();
-	
+	public List<ProductEntity> getAllProductsName();
 
 	
 }
