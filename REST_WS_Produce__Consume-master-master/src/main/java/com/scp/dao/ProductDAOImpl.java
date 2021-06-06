@@ -13,6 +13,7 @@ public class ProductDAOImpl implements ProductDAO {
 
 	@Override
 	public ProductEntity addProduct(ProductEntity product) {
+		System.out.println("JK");
 		SessionFactory sessionFactory = SessionFactoryUtil.getSessionFactory();
 		Session session = sessionFactory.openSession();
 		Transaction tr = session.beginTransaction();
