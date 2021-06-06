@@ -58,6 +58,7 @@ public class ProductDAOImpl implements ProductDAO{
 
 	@Override
 	public List<ProductEntity> getAllProducts() {
+		System.out.println("Inside getAllProducts() method");
 		SessionFactory sessionFactory = SessionFactoryUtil.getSessionFactory();
 		Session session = sessionFactory.openSession();
 		List<ProductEntity> productEntities = session.createQuery("from ProductEntity").list();
