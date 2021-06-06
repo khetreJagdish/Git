@@ -65,4 +65,10 @@ public class ProductDAOImpl implements ProductDAO {
 		return productEntities;
 	}
 
+	@Override
+	public List<ProductEntity> getAllProductsName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
