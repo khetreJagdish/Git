@@ -9,9 +9,8 @@ import org.hibernate.Transaction;
 import com.scp.entities.ProductEntity;
 import com.scp.util.SessionFactoryUtil;
 
-public class ProductDAOImpl implements ProductDAO{
+public class ProductDAOImpl implements ProductDAO {
 
-	
 	@Override
 	public ProductEntity addProduct(ProductEntity product) {
 		SessionFactory sessionFactory = SessionFactoryUtil.getSessionFactory();
@@ -58,7 +57,7 @@ public class ProductDAOImpl implements ProductDAO{
 
 	@Override
 	public List<ProductEntity> getAllProducts() {
-		System.out.print(false);
+		System.out.println("Inside getAllProducts() method");
 		SessionFactory sessionFactory = SessionFactoryUtil.getSessionFactory();
 		Session session = sessionFactory.openSession();
 		List<ProductEntity> productEntities = session.createQuery("from ProductEntity").list();
